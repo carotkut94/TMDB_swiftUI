@@ -24,6 +24,10 @@
 		E17582BA25CB4CE0007036E6 /* MovieBackdropCaraousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17582B925CB4CE0007036E6 /* MovieBackdropCaraousel.swift */; };
 		E17582BD25CB509A007036E6 /* MoviePosterCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17582BC25CB509A007036E6 /* MoviePosterCard.swift */; };
 		E17582C025CB52D5007036E6 /* MoviePosterCaraousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17582BF25CB52D5007036E6 /* MoviePosterCaraousel.swift */; };
+		E17582C425CB54A6007036E6 /* MovieListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17582C325CB54A6007036E6 /* MovieListView.swift */; };
+		E17582C725CB551E007036E6 /* MovieListState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17582C625CB551E007036E6 /* MovieListState.swift */; };
+		E17582CA25CB5966007036E6 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17582C925CB5966007036E6 /* ActivityIndicator.swift */; };
+		E17582CF25CB5B5D007036E6 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17582CE25CB5B5D007036E6 /* LoadingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +50,10 @@
 		E17582B925CB4CE0007036E6 /* MovieBackdropCaraousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieBackdropCaraousel.swift; sourceTree = "<group>"; };
 		E17582BC25CB509A007036E6 /* MoviePosterCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviePosterCard.swift; sourceTree = "<group>"; };
 		E17582BF25CB52D5007036E6 /* MoviePosterCaraousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviePosterCaraousel.swift; sourceTree = "<group>"; };
+		E17582C325CB54A6007036E6 /* MovieListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListView.swift; sourceTree = "<group>"; };
+		E17582C625CB551E007036E6 /* MovieListState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListState.swift; sourceTree = "<group>"; };
+		E17582C925CB5966007036E6 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		E17582CE25CB5B5D007036E6 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,10 +140,13 @@
 		E175829F25CB435D007036E6 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E17582CC25CB5975007036E6 /* UIKitViews */,
 				E17582A025CB436E007036E6 /* MovieBackdropCard.swift */,
 				E17582B925CB4CE0007036E6 /* MovieBackdropCaraousel.swift */,
 				E17582BC25CB509A007036E6 /* MoviePosterCard.swift */,
 				E17582BF25CB52D5007036E6 /* MoviePosterCaraousel.swift */,
+				E17582C325CB54A6007036E6 /* MovieListView.swift */,
+				E17582CE25CB5B5D007036E6 /* LoadingView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -144,8 +155,17 @@
 			isa = PBXGroup;
 			children = (
 				E17582A425CB4410007036E6 /* ImageLoader.swift */,
+				E17582C625CB551E007036E6 /* MovieListState.swift */,
 			);
 			path = Bindings;
+			sourceTree = "<group>";
+		};
+		E17582CC25CB5975007036E6 /* UIKitViews */ = {
+			isa = PBXGroup;
+			children = (
+				E17582C925CB5966007036E6 /* ActivityIndicator.swift */,
+			);
+			path = UIKitViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,15 +241,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				E17582BA25CB4CE0007036E6 /* MovieBackdropCaraousel.swift in Sources */,
+				E17582CA25CB5966007036E6 /* ActivityIndicator.swift in Sources */,
 				E17582C025CB52D5007036E6 /* MoviePosterCaraousel.swift in Sources */,
 				E175827C25CB3429007036E6 /* ContentView.swift in Sources */,
 				E175827A25CB3429007036E6 /* TMDBApp.swift in Sources */,
+				E17582CF25CB5B5D007036E6 /* LoadingView.swift in Sources */,
 				E17582A125CB436E007036E6 /* MovieBackdropCard.swift in Sources */,
 				E17582BD25CB509A007036E6 /* MoviePosterCard.swift in Sources */,
+				E17582C725CB551E007036E6 /* MovieListState.swift in Sources */,
 				E175828F25CB35B2007036E6 /* MovieService.swift in Sources */,
 				E175829925CB40C9007036E6 /* Movie+Stub.swift in Sources */,
 				E17582A525CB4410007036E6 /* ImageLoader.swift in Sources */,
 				E175828B25CB3514007036E6 /* Movie.swift in Sources */,
+				E17582C425CB54A6007036E6 /* MovieListView.swift in Sources */,
 				E175829325CB3876007036E6 /* MovieStore.swift in Sources */,
 				E175829625CB3938007036E6 /* Utils.swift in Sources */,
 			);
@@ -361,6 +385,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"TMDB/Preview Content\"";
+				DEVELOPMENT_TEAM = 8EP984CMVZ;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = TMDB/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -382,6 +407,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"TMDB/Preview Content\"";
+				DEVELOPMENT_TEAM = 8EP984CMVZ;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = TMDB/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
